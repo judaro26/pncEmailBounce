@@ -2,7 +2,7 @@ name: run pncbouncedemail.py
 
 on:
   schedule:
-    - cron: '5 14 * * *'
+    - cron: '5 17 * * *'
 
 jobs:
   build:
