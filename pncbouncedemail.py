@@ -45,36 +45,16 @@ final_reportName="PNC Bounced Email Report For " +today+".csv"
 
 
 def getdocumentname():
-    cookies = {
-        'intercom-device-id-sfx5kqkh': '21d1a29f-d462-40d3-a40c-871500973816',
-        '_gcl_au': '1.1.953156005.1695748000',
-        '_mkto_trk': 'id:208-TJD-841&token:_mch-observeinc.com-1695748000268-73073',
-        '_fbp': 'fb.1.1695748001141.263707556',
-        '_ga': 'GA1.1.857720426.1694183932',
-        '_ga_WHNXWVEKF7': 'GS1.1.1696001093.2.1.1696001093.60.0.0',
-        '_hjSessionUser_3589698': 'eyJpZCI6IjI4YzkzZmM3LWZmZGUtNWIxYi05Nzc4LWFjZDc5NjE4YzMyMCIsImNyZWF0ZWQiOjE2OTYwMDEwOTUyNDUsImV4aXN0aW5nIjpmYWxzZX0=',
-        'observe-customers': '%7B%22customerIds%22%3A%5B%22158395772829%22%5D%7D',
-        'observe-session': 'eyJwYXNzcG9ydCI6eyJ1c2VyIjp7InVzZXJJZHMiOiJ7XCIxNTgzOTU3NzI4MjlcIjpcIjE5OTY0XCJ9IiwidG9rZW4iOiJxbk55QlFTYk1ha1pGOGh2czhzUEVwTUUzUHdyYnVoVCJ9fX0=',
-        'observe-session.sig': 'u4wjsrXESX_ibS9E8V3p3mCF3D0',
-        'intercom-session-sfx5kqkh': 'NWNJSm1rRVRvR0F3MWR1UU9McXVnN0tlS1FMMWJHazIvZG90RkEyQ254UExrbmc0ZWg3SXJDcXlpRnZQZ1Rvei0tb2REaG9JWXMzWFhjUEowRW4ycGtvQT09--567b92341def353bfd90b734d1f027f27739dd3d',
-    }
     headers = {
-        'authority': '158395772829.observeinc.com',
-        'accept': '*/*',
-        'accept-language': 'en-US,en;q=0.9',
-        'authorization': 'Bearer 158395772829 qnNyBQSbMakZF8hvs8sPEpME3PwrbuhT',
-        'content-type': 'application/json',
-        # 'cookie': 'intercom-device-id-sfx5kqkh=21d1a29f-d462-40d3-a40c-871500973816; _gcl_au=1.1.953156005.1695748000; _mkto_trk=id:208-TJD-841&token:_mch-observeinc.com-1695748000268-73073; _fbp=fb.1.1695748001141.263707556; _ga=GA1.1.857720426.1694183932; _ga_WHNXWVEKF7=GS1.1.1696001093.2.1.1696001093.60.0.0; _hjSessionUser_3589698=eyJpZCI6IjI4YzkzZmM3LWZmZGUtNWIxYi05Nzc4LWFjZDc5NjE4YzMyMCIsImNyZWF0ZWQiOjE2OTYwMDEwOTUyNDUsImV4aXN0aW5nIjpmYWxzZX0=; observe-customers=%7B%22customerIds%22%3A%5B%22158395772829%22%5D%7D; observe-session=eyJwYXNzcG9ydCI6eyJ1c2VyIjp7InVzZXJJZHMiOiJ7XCIxNTgzOTU3NzI4MjlcIjpcIjE5OTY0XCJ9IiwidG9rZW4iOiJxbk55QlFTYk1ha1pGOGh2czhzUEVwTUUzUHdyYnVoVCJ9fX0=; observe-session.sig=u4wjsrXESX_ibS9E8V3p3mCF3D0; intercom-session-sfx5kqkh=NWNJSm1rRVRvR0F3MWR1UU9McXVnN0tlS1FMMWJHazIvZG90RkEyQ254UExrbmc0ZWg3SXJDcXlpRnZQZ1Rvei0tb2REaG9JWXMzWFhjUEowRW4ycGtvQT09--567b92341def353bfd90b734d1f027f27739dd3d',
-        'origin': 'https://158395772829.observeinc.com',
-        'referer': 'https://158395772829.observeinc.com/workspace/41239083/worksheet/PNC-BOUNCED-EMAIL-REPORT-41295443?time-preset=PAST_24_HOURS&time-start=2023-10-08T08.27.35-07.00&time-end=2023-10-09T08.27.35-07.00&s=19964-gdcgdp9c',
-        'sec-ch-ua': '"Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
+        'sec-ch-ua': '"Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"',
+        'traceparent': '00-4ad50c852cac7b214ee230c7f44654ec-207a4c42a5a4aec9-01',
         'sec-ch-ua-mobile': '?0',
+        'authorization': 'Bearer 158395772829 ulY1D3N9962eP4RO2mfEdouK5fikLZM4',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+        'content-type': 'application/json',
+        'accept': '*/*',
+        'Referer': 'https://158395772829.observeinc.com/workspace/41239083/worksheet/PNC-BOUNCED-EMAIL-REPORT-41295443',
         'sec-ch-ua-platform': '"macOS"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin',
-        'traceparent': '00-6cdcd91b20829afc6faf56c0b500e850-0b7d2aac3db0256a-01',
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
     }
     params = {
         'queryName': 'ExportQuery',
@@ -85,7 +65,7 @@ def getdocumentname():
             'query': {
                 'stages': [
                     {
-                        'id': 'stage-wkeo28hn',
+                        'id': 'stage-zlahsl6t',
                         'input': [
                             {
                                 'inputName': 'Blend/Logs/Restricted/AWS SES Logs',
@@ -97,30 +77,24 @@ def getdocumentname():
                         'pipeline': 'filter not is_null(data_json)\nmake_col message_timestamp:string(data_json.mail.timestamp)\nmake_col to:data_json.mail.commonHeaders.to\nmake_col to: (string(to[0]))\nmake_col replyTo:data_json.mail.commonHeaders.replyTo\nmake_col replyTo: (string(replyTo[0]))\nmake_col subject:string(data_json.mail.commonHeaders.subject)\nmake_col notificationType:string(data_json.notificationType)\nmake_col bounceType:string(data_json.bounce.bounceSubType)\nfilter replyTo~pnc\nfilter data_json~bounce\n\n\npick_col\n    timestamp,\n    message_timestamp,\n    to,\n    bounceType,\n    notificationType,\n    replyTo,\n    subject\n',
                     },
                 ],
-                'outputStage': 'stage-wkeo28hn',
+                'outputStage': 'stage-zlahsl6t',
                 'layout': {},
                 'parameterValues': [],
             },
             'params': {
-                'startTime': '2023-10-08T15:27:35.197Z',
-                'endTime': '2023-10-09T15:27:35.197Z',
+                'startTime': paststrippedvalue,
+                'endTime': currentstrippedvalue,
             },
             'presentation': {
                 'limit': '100000',
                 'linkify': True,
             },
-            'filename': 'PNC-BOUNCED-EMAIL-REPORT-1696867820070.csv',
+            'filename': 'PNC-BOUNCED-EMAIL-REPORT-1697650029210.csv',
             'exportFormat': 'Csv',
         },
         'query': 'query ExportQuery($query: MultiStageQueryInput!, $params: QueryParams!, $presentation: StagePresentationInput!, $filename: String, $exportFormat: ExportFileFormat) {\n  exportQuery(\n    query: $query\n    params: $params\n    presentation: $presentation\n    filename: $filename\n    exportFormat: $exportFormat\n  ) {\n    exportUrl\n    exportUrlExpiration\n    exportFilename\n    exportFormat\n    __typename\n  }\n}',
     }
-    response = requests.post(
-        'https://158395772829.observeinc.com/v1/meta',
-        params=params,
-        cookies=cookies,
-        headers=headers,
-        json=json_data,
-    )
+    response = requests.post('https://158395772829.observeinc.com/v1/meta', params=params, headers=headers, json=json_data)
     responsejson=json.loads(response.text)
     global csvreporturl
     csvreporturl=responsejson['data']['exportQuery']['exportUrl']
@@ -137,7 +111,6 @@ def getdocumentname():
     df=pd.read_csv(firstTextDoc)
     df.to_csv(firstReportcsv,encoding='utf-8', index=None)
     print('FIRST REPORT CREATED SUCCESSFULLY.')
-
 
 
 #### FUNCTION TO SEND EMAIL
